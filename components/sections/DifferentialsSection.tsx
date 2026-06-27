@@ -1,3 +1,6 @@
+'use client'
+
+import { motion } from 'framer-motion'
 import { Check, X } from 'lucide-react'
 import { DIFFERENTIALS } from '@/lib/constants'
 
@@ -11,13 +14,26 @@ export default function DifferentialsSection() {
   return (
     <section className="bg-[#1C3A6E] py-20">
       <div className="container mx-auto max-w-6xl px-4">
-        <div className="mb-12 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-12 text-center"
+        >
           <h2 className="mb-3 text-3xl font-bold text-white md:text-4xl">
             CheckObra vs. alternativas
           </h2>
           <p className="text-blue-200">Veja por que a mudança vale a pena.</p>
-        </div>
-        <div className="overflow-x-auto rounded-xl border border-blue-800">
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 32 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="overflow-x-auto rounded-xl border border-blue-800"
+        >
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-blue-800 bg-blue-900/50">
@@ -29,19 +45,23 @@ export default function DifferentialsSection() {
             </thead>
             <tbody>
               {DIFFERENTIALS.map((row, i) => (
-                <tr
+                <motion.tr
                   key={row.feature}
+                  initial={{ opacity: 0, x: -12 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: i * 0.04 }}
                   className={i % 2 === 0 ? 'border-b border-blue-800/50' : 'border-b border-blue-800/50 bg-blue-900/20'}
                 >
                   <td className="p-4 text-white">{row.feature}</td>
                   <td className="p-4 text-center"><Cell value={row.checkobra} /></td>
                   <td className="p-4 text-center"><Cell value={row.planilhas} /></td>
                   <td className="p-4 text-center"><Cell value={row.tradicional} /></td>
-                </tr>
+                </motion.tr>
               ))}
             </tbody>
           </table>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

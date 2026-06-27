@@ -1,23 +1,57 @@
+'use client'
+
+import { motion, type Variants } from 'framer-motion'
 import { Check } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { PLANS, SITE } from '@/lib/constants'
 
+const container: Variants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1 } },
+}
+
+const cardVariant: Variants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+}
+
 export default function PricingSection() {
   return (
     <section id="precos" className="bg-[#F8FAFC] py-20">
       <div className="container mx-auto max-w-6xl px-4">
-        <div className="mb-12 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-12 text-center"
+        >
           <h2 className="mb-3 text-3xl font-bold text-[#1C3A6E] md:text-4xl">
             Planos simples, sem surpresas.
           </h2>
           <p className="text-gray-500">Cancele quando quiser. Implantação opcional.</p>
-        </div>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        </motion.div>
+
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-60px' }}
+          className="grid grid-cols-1 gap-6 md:grid-cols-3"
+        >
           {PLANS.map((plan) => (
-            <div
+            <motion.div
               key={plan.name}
-              className={`relative rounded-2xl border p-8 ${
+              variants={cardVariant}
+              whileHover={{
+                y: -8,
+                boxShadow: plan.featured
+                  ? '0 20px 48px -8px rgba(27,157,192,0.35)'
+                  : '0 16px 40px -8px rgba(0,0,0,0.12)',
+              }}
+              transition={{ type: 'spring', stiffness: 280, damping: 22 }}
+              className={`relative cursor-default rounded-2xl border p-8 ${
                 plan.featured
                   ? 'border-[#1B9DC0] bg-white shadow-xl ring-2 ring-[#1B9DC0]'
                   : 'border-gray-200 bg-white shadow-sm'
@@ -54,9 +88,9 @@ export default function PricingSection() {
                   Falar com vendas
                 </a>
               </Button>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
         <p className="mt-8 text-center text-xs text-gray-400">
           * Implantação one-time opcional: Start R$ 3.000 · Growth R$ 5.000 · Enterprise R$ 8.000
         </p>
