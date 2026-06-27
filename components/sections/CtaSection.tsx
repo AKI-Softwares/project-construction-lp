@@ -25,10 +25,10 @@ export default function CtaSection() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
-            Veja o CheckObra em ação — 30 minutos que mudam como você opera.
+            Pronto para digitalizar sua obra?
           </h2>
           <p className="mb-8 text-lg text-blue-100">
-            Demonstração gratuita, sem compromisso. Você vai sair da chamada sabendo exatamente o que muda na sua operação.
+            Fale com nosso time, agende uma demonstração ao vivo e veja na prática o que muda.
           </p>
           <motion.div
             whileHover={{ scale: 1.05 }}
