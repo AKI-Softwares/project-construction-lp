@@ -6,21 +6,21 @@ export const SITE = {
 } as const
 
 export const PAIN_POINTS = [
-  { icon: 'FileX', title: 'Formulários em papel', description: 'Checklists se perdem, rasgam ou somem.' },
-  { icon: 'Table2', title: 'Planilhas Excel', description: 'Sem colaboração em tempo real nem histórico confiável.' },
-  { icon: 'MessageCircleX', title: 'WhatsApp como sistema', description: 'Fotos e NCs sem rastreabilidade ou vínculo ao apartamento.' },
-  { icon: 'EyeOff', title: 'Gestores sem visibilidade', description: 'Sem saber o que acontece em campo até o final do dia.' },
-  { icon: 'RefreshCw', title: 'Retrabalho caro', description: 'Inspetor não sabe quais itens já foram corrigidos.' },
-  { icon: 'Scale', title: 'Risco jurídico', description: 'Histórico perdido quando comprador contesta uma NC.' },
+  { icon: 'FileX', title: 'Checklists que somem', description: 'Formulários rasgam, desaparecem e atrasam a entrega das chaves.' },
+  { icon: 'Table2', title: 'Planilhas que não escalam', description: 'Sem histórico centralizado, qualquer dado contestado vira problema jurídico.' },
+  { icon: 'MessageCircleX', title: 'Registros perdidos no WhatsApp', description: 'Fotos sem localização, apartamento ou data — inúteis na hora da contestação.' },
+  { icon: 'EyeOff', title: 'Gestão às cegas', description: 'Você descobre o andamento real só no fim do dia — tarde demais para agir.' },
+  { icon: 'RefreshCw', title: 'Inspetor volta ao mesmo lugar', description: 'Sem saber o que já foi corrigido, o inspetor retrabalha o que poderia ter avançado.' },
+  { icon: 'Scale', title: 'Exposição jurídica real', description: 'Quando o comprador contesta a entrega, você precisa de evidências. Sem rastreabilidade, você perde.' },
 ] as const
 
 export const FEATURES = [
-  { icon: 'Smartphone', title: 'Mobile-first para inspetores', description: 'App Android com fluxo completo sem abrir o laptop.' },
-  { icon: 'Bell', title: 'Notificações push instantâneas', description: 'Inspetor recebe atribuição no celular e abre a vistoria com um tap.' },
-  { icon: 'RotateCcw', title: 'Re-inspeção automatizada', description: 'Sistema gera nova vistoria contendo apenas os itens NOK.' },
-  { icon: 'PenLine', title: 'Assinatura digital', description: 'Inspetor assina o laudo com o dedo no app.' },
-  { icon: 'FileText', title: 'Relatório PDF automático', description: 'Gerado e compartilhável por WhatsApp em segundos.' },
-  { icon: 'BarChart3', title: 'Analytics completo', description: 'KPIs de produtividade, SLA, qualidade e evolução temporal.' },
+  { icon: 'Smartphone', title: 'App pensado para o campo', description: 'Interface simples e rápida: o inspetor abre, vistoria e finaliza — sem treinamento longo.' },
+  { icon: 'Bell', title: 'Zero atraso entre atribuição e execução', description: 'O inspetor recebe a vistoria no celular em segundos e já inicia com um toque.' },
+  { icon: 'RotateCcw', title: 'Reinspeção automática e inteligente', description: 'Só os itens com pendência são reagendados — sem retrabalho, sem percorrer o apartamento inteiro de novo.' },
+  { icon: 'PenLine', title: 'Laudo assinado em campo', description: 'Assinatura digital com o dedo no app: sem imprimir, sem digitalizar, com validade jurídica.' },
+  { icon: 'FileText', title: 'Laudo PDF profissional em segundos', description: 'Gerado automaticamente e compartilhado com o cliente via WhatsApp na hora da entrega.' },
+  { icon: 'BarChart3', title: 'Visibilidade total do portfólio', description: 'Produtividade, SLA e qualidade de cada empreendimento, em tempo real, de qualquer lugar.' },
 ] as const
 
 export const DIFFERENTIALS: {
@@ -30,13 +30,13 @@ export const DIFFERENTIALS: {
   tradicional: boolean | string
 }[] = [
   { feature: 'App mobile nativo para inspetor', checkobra: true, planilhas: false, tradicional: 'Parcial' },
-  { feature: 'Notificações push de atribuição', checkobra: true, planilhas: false, tradicional: 'Raramente' },
-  { feature: 'Re-inspeção automática (só itens NOK)', checkobra: true, planilhas: false, tradicional: false },
-  { feature: 'Assinatura digital no app', checkobra: true, planilhas: false, tradicional: 'Raramente' },
-  { feature: 'Relatório PDF automatizado', checkobra: true, planilhas: 'Manual', tradicional: true },
-  { feature: 'Rastreabilidade jurídica', checkobra: true, planilhas: false, tradicional: 'Parcial' },
-  { feature: 'Analytics com ranking e timeline', checkobra: true, planilhas: 'Manual', tradicional: true },
-  { feature: 'Custo de implantação', checkobra: 'Baixo (SaaS)', planilhas: 'Zero', tradicional: 'Alto' },
+  { feature: 'Notificações push em tempo real', checkobra: true, planilhas: false, tradicional: 'Raramente' },
+  { feature: 'Reinspeção só com itens pendentes', checkobra: true, planilhas: false, tradicional: false },
+  { feature: 'Assinatura digital com validade jurídica', checkobra: true, planilhas: false, tradicional: 'Raramente' },
+  { feature: 'Laudo PDF gerado automaticamente', checkobra: true, planilhas: 'Manual', tradicional: true },
+  { feature: 'Proteção contra contestações jurídicas', checkobra: true, planilhas: false, tradicional: 'Parcial' },
+  { feature: 'Dashboard com ranking e evolução', checkobra: true, planilhas: 'Manual', tradicional: true },
+  { feature: 'Investimento', checkobra: 'SaaS acessível', planilhas: 'Zero', tradicional: 'Alto' },
 ]
 
 export const PLANS = [
@@ -46,12 +46,12 @@ export const PLANS = [
 ] as const
 
 export const FAQ = [
-  { question: 'O sistema funciona offline?', answer: 'O app opera com tolerância a falhas de rede. Os dados são sincronizados automaticamente ao reconectar.' },
-  { question: 'Preciso de um servidor próprio?', answer: 'Não. O CheckObra é SaaS — toda a infraestrutura é gerenciada pela plataforma, sem necessidade de servidor próprio.' },
-  { question: 'Posso ter mais de uma empresa na mesma conta?', answer: 'Cada construtora tem conta e dados completamente isolados. Multi-empresa é suportado a nível de plataforma.' },
-  { question: 'Como funciona a implantação?', answer: 'Nossa equipe configura edifícios, usuários e checklists junto com você. A taxa de implantação é única e opcional.' },
-  { question: 'O app está disponível para iOS?', answer: 'Hoje o app está disponível para Android. O iOS está no roadmap e será lançado em breve.' },
-  { question: 'Como os inspetores recebem as vistorias?', answer: 'Por notificação push diretamente no celular, com link direto para a vistoria atribuída.' },
-  { question: 'Os dados ficam seguros?', answer: 'Sim. Cada empresa tem dados totalmente isolados, hospedados em infraestrutura de nuvem com alta disponibilidade.' },
-  { question: 'Posso cancelar a qualquer momento?', answer: 'Sim. Não há fidelidade mínima. A assinatura é mensal recorrente e pode ser cancelada a qualquer momento.' },
+  { question: 'O app funciona sem internet na obra?', answer: 'Sim. O app opera com tolerância a falhas de rede e sincroniza tudo automaticamente quando a conexão volta — sem perder nenhum dado.' },
+  { question: 'Preciso de servidor ou infraestrutura própria?', answer: 'Não. O CheckObra é 100% SaaS — toda a infraestrutura é gerenciada por nós. Você acessa de qualquer lugar, sem custo de TI.' },
+  { question: 'Funciona para múltiplos empreendimentos?', answer: 'Sim. Gerencie quantos empreendimentos precisar na mesma plataforma, com dados isolados por empresa e visão consolidada para o gestor.' },
+  { question: 'Como é a implantação? Demora muito?', answer: 'Nossa equipe configura edifícios, usuários e checklists junto com você em poucos dias. A taxa de implantação é única e cobre o setup completo.' },
+  { question: 'O app está disponível para iPhone?', answer: 'Hoje disponível para Android. A versão iOS está no roadmap e chegará em breve — entre em contato para ser avisado primeiro.' },
+  { question: 'Como os inspetores recebem as vistorias?', answer: 'Por notificação push direto no celular. O inspetor toca na notificação e já entra na vistoria atribuída — sem acessar e-mail ou planilha.' },
+  { question: 'Os dados da minha empresa ficam protegidos?', answer: 'Sim. Cada empresa tem dados 100% isolados, com backups automáticos e infraestrutura em nuvem com alta disponibilidade.' },
+  { question: 'Posso cancelar quando quiser?', answer: 'Sim, sem multa e sem burocracia. Assinatura mensal — cancele quando precisar, sem fidelidade mínima.' },
 ] as const

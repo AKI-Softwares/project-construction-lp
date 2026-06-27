@@ -35,7 +35,7 @@ export default function SolutionSection() {
             Uma plataforma, dois mundos: campo e escritório.
           </h2>
           <p className="text-gray-500">
-            Tudo que inspetores e gestores precisam, em uma solução integrada.
+            Do app do inspetor ao dashboard do gestor — tudo conectado, em tempo real, sem planilha.
           </p>
         </motion.div>
 

@@ -24,7 +24,7 @@ export default function DifferentialsSection() {
           <h2 className="mb-3 text-3xl font-bold text-white md:text-4xl">
             CheckObra vs. alternativas
           </h2>
-          <p className="text-blue-200">Veja por que a mudança vale a pena.</p>
+          <p className="text-blue-200">Compare e decida com clareza.</p>
         </motion.div>
 
         <motion.div

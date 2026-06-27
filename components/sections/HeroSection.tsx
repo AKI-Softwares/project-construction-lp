@@ -37,8 +37,8 @@ export default function HeroSection() {
             </motion.h1>
 
             <motion.p variants={item} className="mb-10 text-lg text-gray-600">
-              Substitua papel, planilha e WhatsApp por uma plataforma integrada entre
-              inspetores no campo e gestores no escritório.
+              Mais agilidade na entrega, menos retrabalho e rastreabilidade total em cada
+              vistoria — do inspetor no campo ao gestor no escritório.
             </motion.p>
 
             <motion.div variants={item} className="flex flex-col gap-4 sm:flex-row">
@@ -65,11 +65,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
             className="relative"
           >
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-              className="relative overflow-hidden rounded-2xl shadow-2xl"
-            >
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <Image
                 src="/images/hero-inspector.png"
                 alt="Inspetor registrando não conformidade com o CheckObra"
@@ -78,7 +74,7 @@ export default function HeroSection() {
                 className="h-auto w-full"
                 priority
               />
-            </motion.div>
+            </div>
             <div className="absolute -bottom-8 -right-8 -z-10 h-64 w-64 rounded-full bg-[#1B9DC0]/20 blur-3xl" />
           </motion.div>
         </div>

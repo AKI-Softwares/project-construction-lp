@@ -25,10 +25,10 @@ export default function CtaSection() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
-            Pronto para digitalizar suas vistorias?
+            Sua próxima entrega pode ser a mais tranquila que você já teve.
           </h2>
           <p className="mb-8 text-lg text-blue-100">
-            Fale com nosso time e veja o CheckObra funcionando na prática.
+            Fale com nosso time, agende uma demonstração ao vivo e veja na prática o que muda.
           </p>
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -38,7 +38,7 @@ export default function CtaSection() {
           >
             <Button asChild size="lg" className="bg-[#1B9DC0] px-10 text-white hover:bg-[#1B9DC0]/90">
               <a href={SITE.whatsappUrl} target="_blank" rel="noopener noreferrer">
-                Falar com vendas →
+                Quero uma demonstração →
               </a>
             </Button>
           </motion.div>

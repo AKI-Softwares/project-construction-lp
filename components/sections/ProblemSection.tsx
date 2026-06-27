@@ -34,7 +34,7 @@ export default function ProblemSection() {
           <h2 className="mb-3 text-3xl font-bold text-[#1C3A6E] md:text-4xl">
             Como sua construtora conduz vistorias hoje?
           </h2>
-          <p className="text-gray-500">A realidade da maioria das obras.</p>
+          <p className="text-gray-500">Reconhece alguma dessas situações?</p>
         </motion.div>
 
         {/* Image banner */}
@@ -55,7 +55,7 @@ export default function ProblemSection() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#1C3A6E]/70 to-transparent" />
           <div className="absolute inset-0 flex items-center px-8 md:px-14">
             <p className="max-w-md text-xl font-semibold leading-snug text-white md:text-2xl">
-              Papel, planilha e WhatsApp não escalam para vistorias técnicas.
+              Cada entrega com atraso ou contestação começa com processos manuais descontrolados.
             </p>
           </div>
         </motion.div>
