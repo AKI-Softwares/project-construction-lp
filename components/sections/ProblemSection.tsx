@@ -32,9 +32,9 @@ export default function ProblemSection() {
           className="mb-12 text-center"
         >
           <h2 className="mb-3 text-3xl font-bold text-[#1C3A6E] md:text-4xl">
-            Como sua construtora conduz vistorias hoje?
+            Você ainda faz vistoria assim?
           </h2>
-          <p className="text-gray-500">Reconhece alguma dessas situações?</p>
+          <p className="text-gray-500">Se sim, você está perdendo dinheiro e correndo risco toda semana.</p>
         </motion.div>
 
         {/* Image banner */}

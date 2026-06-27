@@ -32,7 +32,7 @@ describe('DifferentialsSection', () => {
     render(<DifferentialsSection />)
     expect(screen.getByText('CheckObra')).toBeInTheDocument()
     expect(screen.getByText('Planilhas')).toBeInTheDocument()
-    expect(screen.getByText('Sistemas trad.')).toBeInTheDocument()
+    expect(screen.getByText('Sistemas tradicionais')).toBeInTheDocument()
   })
   it('renderiza primeira e última linha', () => {
     render(<DifferentialsSection />)

@@ -24,7 +24,7 @@ export default function DifferentialsSection() {
           <h2 className="mb-3 text-3xl font-bold text-white md:text-4xl">
             CheckObra vs. alternativas
           </h2>
-          <p className="text-blue-200">Compare e decida com clareza.</p>
+          <p className="text-blue-200">A decisão que construtoras eficientes já tomaram.</p>
         </motion.div>
 
         <motion.div
@@ -40,7 +40,7 @@ export default function DifferentialsSection() {
                 <th scope="col" className="p-4 text-left font-medium text-blue-200">Funcionalidade</th>
                 <th scope="col" className="p-4 text-center font-semibold text-[#1B9DC0]">CheckObra</th>
                 <th scope="col" className="p-4 text-center font-medium text-blue-200">Planilhas</th>
-                <th scope="col" className="p-4 text-center font-medium text-blue-200">Sistemas trad.</th>
+                <th scope="col" className="p-4 text-center font-medium text-blue-200">Sistemas tradicionais</th>
               </tr>
             </thead>
             <tbody>

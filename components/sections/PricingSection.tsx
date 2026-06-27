@@ -30,7 +30,7 @@ export default function PricingSection() {
           <h2 className="mb-3 text-3xl font-bold text-[#1C3A6E] md:text-4xl">
             Planos simples, sem surpresas.
           </h2>
-          <p className="text-gray-500">Cancele quando quiser. Implantação opcional.</p>
+          <p className="text-gray-500">Comece em dias. Sem contrato de fidelidade. ROI visível no primeiro mês.</p>
         </motion.div>
 
         <motion.div

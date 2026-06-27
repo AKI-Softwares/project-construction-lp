@@ -37,14 +37,14 @@ export default function HeroSection() {
             </motion.h1>
 
             <motion.p variants={item} className="mb-10 text-lg text-gray-600">
-              Mais agilidade na entrega, menos retrabalho e rastreabilidade total em cada
-              vistoria — do inspetor no campo ao gestor no escritório.
+              Construtoras que usam o CheckObra entregam mais rápido, eliminam retrabalho
+              e têm proteção jurídica completa em cada vistoria — sem planilha, sem papel, sem WhatsApp.
             </motion.p>
 
             <motion.div variants={item} className="flex flex-col gap-4 sm:flex-row">
               <Button asChild size="lg" className="bg-[#1C3A6E] px-8 text-white hover:bg-[#1C3A6E]/90">
                 <a href={SITE.whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  Falar com vendas →
+                  Agendar demonstração gratuita →
                 </a>
               </Button>
               <Button

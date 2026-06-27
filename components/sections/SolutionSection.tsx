@@ -32,10 +32,10 @@ export default function SolutionSection() {
           className="mb-12 text-center"
         >
           <h2 className="mb-3 text-3xl font-bold text-[#1C3A6E] md:text-4xl">
-            Uma plataforma, dois mundos: campo e escritório.
+            O que muda quando você tem controle real das vistorias.
           </h2>
           <p className="text-gray-500">
-            Do app do inspetor ao dashboard do gestor — tudo conectado, em tempo real, sem planilha.
+            Do app do inspetor no campo ao dashboard do gestor no escritório — tudo conectado, em tempo real.
           </p>
         </motion.div>
 
