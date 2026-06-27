@@ -1,5 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
@@ -40,4 +38,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-.playwright-mcp/*
+.playwright-mcp
+.superpowers
+__tests__
+.claude
+AGENTS.md
+CLAUDE.md
