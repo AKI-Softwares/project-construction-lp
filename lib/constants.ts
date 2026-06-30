@@ -2,7 +2,7 @@ export const SITE = {
   name: 'CheckObra',
   backofficeUrl: 'https://project-construction-front.vercel.app',
   whatsappUrl:
-    'https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C+tenho+interesse+no+CheckObra.+Gostaria+de+agendar+uma+demonstra%C3%A7%C3%A3o.',
+    'https://wa.me/5544998354194?text=Ol%C3%A1%2C+tenho+interesse+no+CheckObra.+Gostaria+de+agendar+uma+demonstra%C3%A7%C3%A3o.',
 } as const
 
 export const PAIN_POINTS = [

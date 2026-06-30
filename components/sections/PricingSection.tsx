@@ -91,9 +91,32 @@ export default function PricingSection() {
             </motion.div>
           ))}
         </motion.div>
-        <p className="mt-8 text-center text-xs text-gray-400">
-          * Implantação one-time opcional: Start R$ 3.000 · Growth R$ 5.000 · Enterprise R$ 8.000
-        </p>
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mt-10 rounded-2xl border border-[#1B9DC0]/20 bg-white px-6 py-6 shadow-sm"
+        >
+          <p className="mb-4 text-center text-sm font-semibold uppercase tracking-widest text-[#1B9DC0]">
+            Implantação one-time (opcional)
+          </p>
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-8">
+            {[
+              { plan: 'Start', value: 'R$ 3.000' },
+              { plan: 'Growth', value: 'R$ 5.000' },
+              { plan: 'Enterprise', value: 'R$ 8.000' },
+            ].map(({ plan, value }) => (
+              <div key={plan} className="flex flex-col items-center gap-1">
+                <span className="text-xs font-medium uppercase tracking-wider text-gray-400">{plan}</span>
+                <span className="text-2xl font-bold text-[#1C3A6E]">{value}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 text-center text-xs text-gray-400">
+            Inclui configuração completa, integração e treinamento da equipe. Pagamento único.
+          </p>
+        </motion.div>
       </div>
     </section>
   )
