@@ -67,7 +67,7 @@ export default function HeroSection() {
           >
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <Image
-                src="/images/hero-inspector.png"
+                src="/images/inspetor-registrando-CheckObra.png"
                 alt="Inspetor registrando não conformidade com o CheckObra"
                 width={1200}
                 height={675}
